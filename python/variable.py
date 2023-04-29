@@ -23,6 +23,7 @@ Les fonctions 		:
 					type() 			=== retourner le type d'une variable
 					int(), float(), str()	=== convertir une donnee
 					str.format() 	=== formater une chaine les accolades sont placées respectivement par rapport aux variables
+                    f"str{variable}..." === Afficher les variables dans la console
                     
 Lors de l'affichage des variables on utilise:
 											\t pour faire une tabulation
@@ -57,7 +58,10 @@ print("On crée une phrase avec nos variables")
 print("L'age du client est : ", agePersonne, "ans. \nLe prix du produit: ", prixHT, "FCFA. \n Payé vraie ou faux: ", paye, ".")
 
 # On va répeter la ligne du haut maintenat avec le .format
-print("L'age du client est : ", agePersonne, "ans. \nLe prix du produit: ", prixHT, "FCFA. \n Payé vraie ou faux: ", paye, ".")
+print("Informations: \n\tL'age du client est : {} ans. \n\tLe prix du produit: {} FCFA. \n\tPayé vraie ou faux: {}".format(agePersonne, prixHT, paye))
+
+# On va répeter la ligne du haut maintenat avec le f"str{variable}..."
+print(f"Informations:\n\tL'age du client est : {agePersonne} ans. \n\tLe prix du produit: {prixHT} FCFA. \n\tPayé vraie ou faux: {paye}")
 
 # On utilise la fonction .format(variable1, variable2,......)
 texte = "L'age du client est {} et le prix est à {} FCFA "
