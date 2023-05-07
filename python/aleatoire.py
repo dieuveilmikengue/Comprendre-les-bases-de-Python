@@ -2,6 +2,7 @@ from random import *
 
 """
 randint(a, b): generer les entiers de [a à b]
+randrange(a, b, n): generer les entiers de [a à b] avec un saut valeur de n
 uniform(a, b): generer les nombres decimaux de a à b
 choice(list): generer un choix dans list ou un tableau par exemple
 shuffle(list): boulverser l'ordre d'une liste
@@ -13,6 +14,12 @@ print(valeur1)
 
 valeur2 = uniform(0, 10) 
 print(valeur2)
+
+c = randrange(0, 20, 2)
+print(c)
+
+for i in range(5):
+    print(randrange(0, 20, 2))
 
 valeur3 = ["Mike", "Lebake", "Dieuveil", "Diska"]
 print(choice(valeur3))
