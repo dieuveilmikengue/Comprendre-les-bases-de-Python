@@ -51,7 +51,7 @@ print(dict1)
 for element in dict: #Tant que y'a des element dans la variable dict
     print(element) #Affiches les
 
-for element in dict.values(): #Tant que y'a des element dans la variable dict
+for element in dict.keys(): #Tant que y'a des element dans la variable dict
     print(element) #Affiches les clés
 
 for element in dict.values(): #Tant que y'a des element dans la variable dict
